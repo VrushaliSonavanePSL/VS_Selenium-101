@@ -1,16 +1,25 @@
-image: gitpod/workspace-java:latest
+# --------------------------------------
+# Gitpod Config for Java + Maven + TestNG + LambdaTest Project
+# --------------------------------------
+
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
-  - name: Setup & Run Tests
+  - name: Project Initialization
     init: |
-      # Install Maven if not already available
-      sudo apt-get update
-      sudo apt-get install -y maven
-      # Install any other dependencies if needed
+      echo "🔧 Installing dependencies..."
+      mvn -q -DskipTests clean install
     command: |
-      # Run your tests in parallel on LambdaTest
-      mvn clean test
+      echo "Gitpod Ready! To execute your Selenium tests on LambdaTest:"
+      echo ""
+      echo " Run: mvn test"
+      echo ""
 
 vscode:
   extensions:
-    - vscjava.vscode-java-pack  # Java support in Gitpod
+    - vscjava.vscode-java-pack
+    - redhat.vscode-xml
+    - humao.rest-client
+    - mhutchie.git-graph
+
