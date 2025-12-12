@@ -1,0 +1,16 @@
+image: gitpod/workspace-java:latest
+
+tasks:
+  - name: Setup & Run Tests
+    init: |
+      # Install Maven if not already available
+      sudo apt-get update
+      sudo apt-get install -y maven
+      # Install any other dependencies if needed
+    command: |
+      # Run your tests in parallel on LambdaTest
+      mvn clean test
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack  # Java support in Gitpod
