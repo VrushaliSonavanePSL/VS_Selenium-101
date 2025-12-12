@@ -1,22 +1,21 @@
-# Selenium Test Automation Project
+# LambdaTest Certification Assignment
 
-## Project Description
-This project contains Selenium TestNG automation tests to run on LambdaTest cloud.
+## How to run tests on Gitpod
 
-## Prerequisites
-- Java 21
-- Eclipse IDE
-- Maven
-- Git
-
-## How to Run Tests
-1. Open the project in Eclipse.
-2. Update your credentials in the test classes or `gitpod.yml`.
-3. Run tests via TestNG or Maven.
+1. Click the "Open in Gitpod" button.
+2. Gitpod will automatically install dependencies using Maven.
+3. Tests run using: mvn clean test
+4. Tests execute on LambdaTest Selenium Grid using capabilities set in the code.
 
 ## Parallel Execution
-Tests are configured to run on multiple browser/OS combinations using TestNG.
 
-## Gitpod Setup
-- Ensure `.gitpod.yml` is present in the project root.
-- Open in Gitpod for cloud dev environment.
+This project runs in parallel on:
+- Windows 10 + Chrome
+- Linux + Edge
+
+## LambdaTest Features Enabled
+- Video recording
+- Network logs
+- Console logs
+- Screenshots
+
