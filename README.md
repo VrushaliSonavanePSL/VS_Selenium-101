@@ -1,4 +1,9 @@
-# LambdaTest Certification Assignment
+# VS_Selenium-101
+
+Click below to open this project directly in Gitpod:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/VrushaliSonavanePSL/VS_Selenium-101)
+
 
 ## How to run tests on Gitpod
 
